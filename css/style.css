@@ -137,29 +137,35 @@ img { max-width: 100%; display: block; }
 /* Theme switch (pill toggle) */
 .theme-switch {
   border: none; background: none; padding: 0; cursor: pointer;
-  display: inline-flex; align-items: center;
+  display: inline-flex; align-items: center; -webkit-tap-highlight-color: transparent;
 }
 .theme-switch__track {
-  position: relative; width: 58px; height: 30px; border-radius: 980px;
+  position: relative; box-sizing: border-box;
+  width: 60px; height: 32px; border-radius: 999px;
   background: var(--surface-2); border: 1px solid var(--line-strong);
-  display: inline-flex; align-items: center; justify-content: space-between;
-  padding: 0 7px; transition: background 0.4s var(--ease), border-color 0.4s var(--ease);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 9px; transition: background 0.4s var(--ease), border-color 0.4s var(--ease);
 }
-.theme-switch__icon { font-size: 13px; line-height: 1; z-index: 1; transition: opacity 0.3s var(--ease); }
+.theme-switch__icon {
+  font-size: 13px; line-height: 1; z-index: 1; position: relative;
+  transition: opacity 0.3s var(--ease);
+}
 .theme-switch__icon--sun { color: #ff9f0a; }
-.theme-switch__icon--moon { color: #8e8e93; }
+.theme-switch__icon--moon { color: #cfcfd4; }
 .theme-switch__knob {
-  position: absolute; top: 3px; left: 3px; width: 22px; height: 22px;
-  border-radius: 50%; background: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  position: absolute; top: 50%; left: 3px; width: 24px; height: 24px;
+  margin-top: -12px; border-radius: 50%; z-index: 2;
+  background: var(--ink);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.28);
   transition: transform 0.4s var(--ease), background 0.4s var(--ease);
 }
 .theme-switch:hover .theme-switch__track { border-color: var(--ink-mute); }
+.theme-switch:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 999px; }
 /* Dark state — knob slides right */
-:root[data-theme="dark"] .theme-switch__track { background: #1c1c1f; }
+:root[data-theme="dark"] .theme-switch__track { background: #1c1c1f; border-color: rgba(255,255,255,0.16); }
 :root[data-theme="dark"] .theme-switch__knob { transform: translateX(28px); background: #ffd54a; }
-:root[data-theme="dark"] .theme-switch__icon--sun { opacity: 0.35; }
-:root[data-theme="light"] .theme-switch__icon--moon { opacity: 0.45; }
+:root[data-theme="dark"] .theme-switch__icon--sun { opacity: 0.4; }
+:root[data-theme="light"] .theme-switch__icon--moon { opacity: 0.9; }
 
 @media (max-width: 640px) {
   .nav__links { display: none; }
