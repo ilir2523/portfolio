@@ -1,6 +1,15 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="sq" data-theme="light">
 <head>
+  <script>
+    // Apply saved theme before paint to avoid flash; default = light (white)
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+      } catch (e) {}
+    })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ilir Rukaj — Senior Frontend Developer</title>
@@ -31,8 +40,12 @@
         <a href="#experience">Eksperienca</a>
         <a href="#contact">Kontakt</a>
       </nav>
-      <button class="nav__toggle" id="themeToggle" aria-label="Ndrysho temën">
-        <span class="nav__toggle-icon"></span>
+      <button class="theme-switch" id="themeToggle" role="switch" aria-checked="false" aria-label="Ndrysho temën (e çelët / e errët)">
+        <span class="theme-switch__track">
+          <span class="theme-switch__icon theme-switch__icon--sun" aria-hidden="true">☀</span>
+          <span class="theme-switch__icon theme-switch__icon--moon" aria-hidden="true">☾</span>
+          <span class="theme-switch__knob"></span>
+        </span>
       </button>
     </div>
   </header>

@@ -19,23 +19,20 @@
     try { localStorage.setItem("theme", v); } catch (e) {}
   }
 
-  var saved = storedTheme();
-  if (saved === "dark" || saved === "light") {
-    root.setAttribute("data-theme", saved);
+  // Default is light (white); the head script already applied any saved theme.
+  function syncSwitch() {
+    if (!toggle) return;
+    var dark = root.getAttribute("data-theme") === "dark";
+    toggle.setAttribute("aria-checked", dark ? "true" : "false");
   }
+  syncSwitch();
 
   if (toggle) {
     toggle.addEventListener("click", function () {
-      var isDark;
-      var current = root.getAttribute("data-theme");
-      if (current) {
-        isDark = current === "dark";
-      } else {
-        isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      }
-      var next = isDark ? "light" : "dark";
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
       saveTheme(next);
+      syncSwitch();
     });
   }
 
