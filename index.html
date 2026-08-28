@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilir Rukaj — Senior Frontend Developer</title>
+  <meta name="description" content="Portofoli i Ilir Rukaj — Senior Frontend Developer me mbi 5 vite eksperiencë në React, React Native dhe Vue.js. Zhvillim produktesh digjitale nga ideja në prodhim." />
+  <meta name="author" content="Ilir Rukaj" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ilir Rukaj — Senior Frontend Developer" />
+  <meta property="og:description" content="Portofol i projekteve web & mobile. React · React Native · Vue.js" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">IR</a>
+      <nav class="nav__links" aria-label="Navigimi kryesor">
+        <a href="#projects">Projektet</a>
+        <a href="#about">Rreth meje</a>
+        <a href="#experience">Eksperienca</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <button class="nav__toggle" id="themeToggle" aria-label="Ndrysho temën">
+        <span class="nav__toggle-icon"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <p class="hero__eyebrow reveal">Senior Frontend Developer · Team Lead</p>
+        <h1 class="hero__title reveal">
+          <span class="line">Ndërtoj produkte</span>
+          <span class="line">digjitale që</span>
+          <span class="line hero__title--accent">njerëzit i duan.</span>
+        </h1>
+        <p class="hero__sub reveal">
+          Mbi 5 vite eksperiencë duke sjellë ide nga skica në prodhim me
+          React, React Native dhe Vue.js. Aktualisht udhëheq ekipin e
+          frontend-it në Baboon&nbsp;Delivery.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">Shiko projektet</a>
+          <a href="#contact" class="btn btn--ghost">Le të flasim</a>
+        </div>
+      </div>
+      <a href="#projects" class="hero__scroll" aria-label="Zbrit poshtë">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Marquee / tech strip -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>React</span><span>·</span><span>React Native</span><span>·</span>
+        <span>Vue.js</span><span>·</span><span>TypeScript</span><span>·</span>
+        <span>Node.js</span><span>·</span><span>Prisma</span><span>·</span>
+        <span>SASS</span><span>·</span><span>WordPress</span><span>·</span>
+        <span>UX Design</span><span>·</span>
+        <span>React</span><span>·</span><span>React Native</span><span>·</span>
+        <span>Vue.js</span><span>·</span><span>TypeScript</span><span>·</span>
+        <span>Node.js</span><span>·</span><span>Prisma</span><span>·</span>
+        <span>SASS</span><span>·</span><span>WordPress</span><span>·</span>
+        <span>UX Design</span><span>·</span>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">01</span>
+          <h2 class="section__title">Projekte të përzgjedhura</h2>
+          <p class="section__lead">
+            Një përzgjedhje e punëve që tregojnë qasjen time ndaj dizajnit të
+            pastër, performancës dhe eksperiencës së përdoruesit.
+          </p>
+        </div>
+
+        <div class="projects">
+          <!-- 1 -->
+          <a href="https://rm-group.netlify.app/" target="_blank" rel="noopener noreferrer" class="project reveal" data-accent="a">
+            <div class="project__visual">
+              <div class="project__mark">RM</div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag">Korporativ</span>
+                <span class="tag">Web</span>
+              </div>
+              <h3 class="project__name">RM Group</h3>
+              <p class="project__desc">
+                Prezencë digjitale moderne për një grup biznesi — strukturë e
+                qartë, seksione të gjalla dhe fokus te besueshmëria e markës.
+              </p>
+              <span class="project__link">Vizito faqen <i>→</i></span>
+            </div>
+          </a>
+
+          <!-- 2 -->
+          <a href="https://ratechssi.netlify.app/" target="_blank" rel="noopener noreferrer" class="project reveal" data-accent="b">
+            <div class="project__visual">
+              <div class="project__mark">RT</div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag">Teknologji</span>
+                <span class="tag">Web</span>
+              </div>
+              <h3 class="project__name">Ratech SSI</h3>
+              <p class="project__desc">
+                Faqe teknologjike me ndjesi profesionale — paraqitje shërbimesh,
+                layout i strukturuar dhe ndërveprim i qetë e i besueshëm.
+              </p>
+              <span class="project__link">Vizito faqen <i>→</i></span>
+            </div>
+          </a>
+
+          <!-- 3 -->
+          <a href="https://trupdhemend.netlify.app/sq/" target="_blank" rel="noopener noreferrer" class="project reveal" data-accent="c">
+            <div class="project__visual">
+              <div class="project__mark">TM</div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag">Shëndet & Wellness</span>
+                <span class="tag">Shumëgjuhësh</span>
+              </div>
+              <h3 class="project__name">Trup dhe Mendje</h3>
+              <p class="project__desc">
+                Platformë wellness me qasje të ngrohtë njerëzore — përmbajtje
+                shumëgjuhëshe, ritëm i qetë vizual dhe lexueshmëri e shkëlqyer.
+              </p>
+              <span class="project__link">Vizito faqen <i>→</i></span>
+            </div>
+          </a>
+
+          <!-- 4 -->
+          <a href="https://donglo.lovable.app/" target="_blank" rel="noopener noreferrer" class="project reveal" data-accent="d">
+            <div class="project__visual">
+              <div class="project__mark">DG</div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag">Produkt</span>
+                <span class="tag">Landing</span>
+              </div>
+              <h3 class="project__name">Donglo</h3>
+              <p class="project__desc">
+                Landing page për një produkt digjital — mesazh i drejtpërdrejtë,
+                hierarki e fortë vizuale dhe thirrje veprimi që konvertojnë.
+              </p>
+              <span class="project__link">Vizito faqen <i>→</i></span>
+            </div>
+          </a>
+
+          <!-- 5 -->
+          <a href="https://creativedesignsstudio.netlify.app/" target="_blank" rel="noopener noreferrer" class="project reveal" data-accent="e">
+            <div class="project__visual">
+              <div class="project__mark">CD</div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta">
+                <span class="tag">Kreativ</span>
+                <span class="tag">Studio</span>
+              </div>
+              <h3 class="project__name">Creative Designs Studio</h3>
+              <p class="project__desc">
+                Portofol për një studio krijuese — estetikë e guximshme, galeri
+                punësh dhe animime të lehta që i japin jetë përmbajtjes.
+              </p>
+              <span class="project__link">Vizito faqen <i>→</i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--tint" id="about">
+      <div class="container about">
+        <div class="about__intro reveal">
+          <span class="section__index">02</span>
+          <h2 class="section__title">Rreth meje</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="about__lead">
+              Jam <strong>Ilir Rukaj</strong>, Frontend Developer i bazuar në
+              Tiranë me mbi 5 vite eksperiencë në zhvillimin e aplikacioneve web
+              dhe mobile.
+            </p>
+            <p>
+              I specializuar në React, React Native dhe Vue.js, kam eksperiencë
+              të konsoliduar në ndërtimin e produkteve digjitale nga ideja deri
+              në prodhim. Aktualisht udhëheq ekipin e frontend-it në Baboon
+              Delivery, ku bashkëpunoj ngushtë me ekipet e produktit dhe
+              backend-it për të sjellë veçori të reja.
+            </p>
+          </div>
+          <div class="about__stats reveal">
+            <div class="stat">
+              <span class="stat__num" data-count="5">5+</span>
+              <span class="stat__label">Vite eksperiencë</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="2">2</span>
+              <span class="stat__label">Çmime profesionale</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="10">10+</span>
+              <span class="stat__label">Produkte të dërguara</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills reveal">
+          <h3 class="skills__title">Aftësi teknike</h3>
+          <ul class="skills__list">
+            <li>React.js</li><li>React Native</li><li>Vue.js</li>
+            <li>JavaScript</li><li>TypeScript</li><li>Node.js</li>
+            <li>HTML5</li><li>CSS / SASS</li><li>Prisma ORM</li>
+            <li>SQL / MySQL</li><li>WordPress</li><li>Git</li>
+            <li>UX Design</li><li>Menaxhim Projekti</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__index">03</span>
+          <h2 class="section__title">Eksperienca & rrugëtimi</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-item__dot"></div>
+            <span class="tl-item__date">Maj 2022 – Sot</span>
+            <h3 class="tl-item__role">Senior Frontend Developer &amp; Team Lead</h3>
+            <p class="tl-item__org">Baboon Delivery · Tiranë</p>
+            <p class="tl-item__desc">
+              Udhëheq ekipin e frontend-it duke mbikëqyrur zhvillimin e
+              aplikacioneve web dhe mobile. Ndërtoj ndërfaqe me React Native dhe
+              Vue.js për platformën e porosive dhe abonimeve.
+            </p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-item__dot"></div>
+            <span class="tl-item__date">Korrik 2020 – Prill 2022</span>
+            <h3 class="tl-item__role">Web Developer</h3>
+            <p class="tl-item__org">Digital Marketing Innovation · Tiranë</p>
+            <p class="tl-item__desc">
+              Zhvillova dhe mirëmbajta faqe interneti për klientë të ndryshëm me
+              HTML5, CSS dhe WordPress, duke lidhur zhvillimin web me nevojat e
+              marketingut dixhital.
+            </p>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-item__dot"></div>
+            <span class="tl-item__date">2018 – 2023</span>
+            <h3 class="tl-item__role">Bachelor — Inxhinieri Matematike dhe Informatike</h3>
+            <p class="tl-item__org">Universiteti i Tiranës</p>
+            <p class="tl-item__desc">
+              Bazë e fortë matematikore dhe informatike që mbështet qasjen time
+              analitike ndaj zgjidhjes së problemeve në zhvillim.
+            </p>
+          </div>
+        </div>
+
+        <div class="awards reveal">
+          <div class="award">
+            <span class="award__year">2024</span>
+            <div>
+              <h4>The Adaptive Innovator Award</h4>
+              <p>Baboon Delivery</p>
+            </div>
+          </div>
+          <div class="award">
+            <span class="award__year">2022</span>
+            <div>
+              <h4>Best Web Developer</h4>
+              <p>Baboon Delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="container contact">
+        <div class="reveal">
+          <span class="section__index">04</span>
+          <h2 class="contact__title">Le të ndërtojmë diçka<br />të shkëlqyer bashkë.</h2>
+          <p class="contact__lead">
+            I hapur për bashkëpunime, projekte freelance dhe mundësi të reja.
+          </p>
+        </div>
+        <div class="contact__links reveal">
+          <a href="mailto:ilirrukaj19@gmail.com" class="contact__card">
+            <span class="contact__k">Email</span>
+            <span class="contact__v">ilirrukaj19@gmail.com</span>
+          </a>
+          <a href="tel:+355684808625" class="contact__card">
+            <span class="contact__k">Telefon</span>
+            <span class="contact__v">+355 68 480 8625</span>
+          </a>
+          <a href="https://linkedin.com/in/ilir-rukaj" target="_blank" rel="noopener noreferrer" class="contact__card">
+            <span class="contact__k">LinkedIn</span>
+            <span class="contact__v">in/ilir-rukaj</span>
+          </a>
+          <div class="contact__card contact__card--static">
+            <span class="contact__k">Vendndodhje</span>
+            <span class="contact__v">Tiranë, Shqipëri</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Ilir Rukaj</span>
+      <span>Ndërtuar me kujdes · React · Vue · Design</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
